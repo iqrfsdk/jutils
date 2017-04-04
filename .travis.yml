@@ -1,0 +1,11 @@
+language: java
+jdk:
+    - oraclejdk7
+    - oraclejdk8
+env:
+    - TEST_DIR=hdlc-framing-v2/
+    - TEST_DIR=jssc-examples/
+    - TEST_DIR=judp-examples/
+script:
+    - cd $TEST_DIR
+    - mvn test
